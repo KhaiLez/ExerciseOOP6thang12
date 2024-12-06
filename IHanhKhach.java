@@ -33,7 +33,6 @@ class HanhKhach implements IHanhKhach {
         this.soVeDaDat = 0;
     }
 
-    // Phương thức đặt vé
     @Override
     public void datVe(String hangGhe) {
         if (soVeDaDat >= 5) {
@@ -45,7 +44,6 @@ class HanhKhach implements IHanhKhach {
         System.out.println("Da dat ve hang ghe: " + hangGhe + " thanh cong.\n");
     }
 
-    // Phương thức hủy vé
     @Override
     public void huyVe(int indexVe) {
         if (indexVe < 0 || indexVe >= soVeDaDat) {
@@ -60,7 +58,6 @@ class HanhKhach implements IHanhKhach {
         soVeDaDat--;
     }
 
-    // Phương thức đổi vé
     @Override
     public void doiVe(int indexVe, String hangGheMoi) {
         if (indexVe < 0 || indexVe >= soVeDaDat) {
